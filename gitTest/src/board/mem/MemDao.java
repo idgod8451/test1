@@ -19,7 +19,7 @@ public class MemDao {
 		Connection conn = db.conn();
 		// 실행할 쿼리문 작성
 		String sql = "insert into mem values(?,?,?,?)";
-		// 자바에서 sql을 실행할 수 있는 PreparedStatement 생성
+		// 자바에서 sql을 실행할 수 있는 PreparedStateme
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			// pstmt.set..(?순서, 값): ? 들어갈 값 설정
